@@ -1,0 +1,12 @@
+- Grafo não-dirigido representando mapa entre cidades(vértices) e rodovias(arestas)
+- encontrar caminho entre vertice X e Y
+- existem um montante inicial
+- vértices possuem peso(descontado ao passar)
+- arestas possuem peso(somado ao chegar)
+- implementar: NO *caminho(int N, int A, int ijpeso[], int ganhos[], int início, int fim, int* dinheiro);
+	- N: numero de vertices (1 a N)
+	- A: numero de arestas
+	- ganhos: valor de ganho em cada cidade (não use a posição 0)
+	- ijpeso: arestas contendo triplas na forma vértice origem i, vértice destino j, e valor do pedágio
+
+Para resolver esse problema, você pode usar o algoritmo de busca em largura (BFS) em um grafo representado por uma lista de adjacência. O BFS é adequado para encontrar o caminho mais curto em um grafo não-ponderado, mas podemos adaptá-lo para considerar os pesos das arestas (pedágios) e os ganhos das cidades.
